@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2.15(1) - Sofía Pozo</title>
+</head>
+<style>
+    #body{margin: 0; display: flex; justify-content: center;}
+    .contenedor{display: grid; grid-template-columns: 1fr 1fr 1fr; margin: 2vw;}
+    img{width: 25vw; height: 25vw; object-fit:cover; margin:2vw; } /*con object-fit: cover evitamos que la imagen se deforme */
+    .postit{width: 25vw; height: 25vw; background-color: blue; margin: 2vw; transform: rotate(15deg);}
+    .postit2{width: 25vw; height: 25vw; background-color: blue; margin: 2vw; transform: rotate(-15deg);}
+
+    /*@media only screen and (max-width:600px) {
+        div {grid-template-columns: 1fr 1fr;}}
+        .postit{width: 25vh; height: 25vh; background-color: blue; margin: 2vw; transform: rotate(15deg);}
+        #menu {width: 25vh; height: 25vh; background-color: blue; margin: 2vw;}*/
+
+</style>
+<body>
+    <div class="contenedor">
+        <img src="Imágenes/ecosistema.jpg">
+        <img src="Imágenes/ecosistema2.jpg">
+       <div class="postit">
+        <p>ECOSISTEMAS</p>
+       </div>
+       <div class="postit2">
+        <p>ECOSISTEMAS</p>
+    </div>
+        <img src="Imágenes/ecosistema1.jpg">
+        <img src="Imágenes/ecosistema5.jpg">
+        <img src="Imágenes/ecosistema6.avif">
+        <img src="Imágenes/ecosistema7.webp">
+        <div class="postit">
+            <p>ECOSISTEMAS</p>
+        </div>
+        <p><b>Prueba de layout utilizando CSS grid - Sofía Pozo Hinojosa</b></p>
+
+    </div>
+</body>
+</html>

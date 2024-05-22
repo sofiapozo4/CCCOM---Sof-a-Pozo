@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de ampliación 03 - Sofía Pozo</title>
+    <style>
+        body{margin: 0; display: flex; justify-content: right; align-items: center;
+        height: 100vh; background-image: url(Imágenes/coquette1.png); background-size: cover;
+        background-repeat: no-repeat; text-wrap: wrap; word-wrap: break-word;}
+        h1{color: plum; font-size: 6rem; font-family: Verdana; width: 70vw;
+        text-align: left; font-weight: bolder; padding-right: 10vw;}
+    </style>
+</head>
+<body>
+    <h1 id="sofia"></h1>
+    <script>
+        let a = ["Hola!","Espero que estés teniendo un buen día :)","Y si no es así, aquí tienes algunas frases motivadoras:","Deja de darle vueltas a todo y sonríe.",
+        "Suma cada pequeño esfuerzo y conseguirás el éxito.","No importa lo que pasó ayer, solo lo que hagas hoy para lo que pasará mañana.","De vez en cuando, deja que se te vaya la pinza.",
+        "Eso era todo.","Espero que te haya animado :)","Adióóss."]
+        let i = 0; 
+        miF();
+        function miF() 
+        {if (i<a.length)
+            {document.getElementById("sofia").innerHTML=a[i];
+            i++;
+            setTimeout(miF,3000);}
+        else {i=0; miF()}}
+    </script>
+</body>
+</html>

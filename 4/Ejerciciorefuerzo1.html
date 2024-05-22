@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sofía Pozo">
+    <title>Ejercicio de ampliación 01 - Sofía Pozo</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{display: flex; justify-content: center;}
+        #contenedor{display: grid; grid-template-columns: 1fr 1fr 1fr; width: 90vw}
+        .elemento{text-align: center;}
+        img{width: 22vw; height: 22vw; margin: 2vw; object-fit: cover;}
+        audio{width: 22vw;}
+        @media screen and (max-width: 600px){
+            #contenedor{grid-template-columns: 1fr;}
+            img{width: 60vw; height: 60vw;}
+            audio{width: 60vw;}
+        }
+    </style>
+</head>
+<body>
+<div id="contenedor">
+        <div class="elemento">
+            <img src="Imágenes/unpeso.jpeg" onclick="">
+            <audio src="audio/unpeso.mp3" id="audio1" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="Imágenes/desesperados.jpg" onclick="">
+            <audio src="audio/desesperados.mp3" id="audio2" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="Imágenes/feliceslos4.jpeg" onclick="">
+            <audio src="audio/feliceslos4.mp3" id="audio3" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="Imágenes/los del espacio.jpg" onclick="">
+            <audio src="audio/losdelespacio.mp3" id="audio4" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="Imágenes/monaco.png" onclick="">
+            <audio src="audio/monaco.mp3" id="audio5" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="Imágenes/wachiturros.jpeg" onclick="">
+            <audio src="audio/wachiturros.mp3" id="audio6" controls loop></audio>
+        </div>
+        <script>
+            function playSound1(){
+                let audio = document.getElementById("audio1");
+                if (audio.paused) audio.play();
+                else audio.pause();
+            }
+            function playSound2(){
+                let audio = document.getElementById("audio2");
+                if (audio.paused) audio.play();
+                else audio.pause();
+            }
+            function playSound3(){
+                let audio = document.getElementById("audio3");
+                if (audio.paused) audio.play();
+                else audio.pause();
+            }
+            function playSound4(){
+                let audio = document.getElementById("audio4");
+                if (audio.paused) audio.play();
+                else audio.pause();
+            }
+            function playSound5(){
+                let audio = document.getElementById("audio5");
+                if (audio.paused) audio.play();
+                else audio.pause();
+            }
+            function playSound6(){
+                let audio = document.getElementById("audio6");
+                if (audio.paused) audio.play();
+                else audio.pause();
+            }
+        </script>
+</div>
+</body>
+</html>
